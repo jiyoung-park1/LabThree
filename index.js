@@ -1,7 +1,10 @@
-var x = 20;
+var x;
 var y;
 
-if(x >= 75){
+if(x > 100){
+  console.log("please write a number from 0 to 100");
+}
+else if(x >= 75){
  y = 1;
 } else if(x >= 60){
   y = 2;
@@ -53,5 +56,5 @@ switch (y) {
      break;
 
      default:
-       console.log("please write a number from 0 to 100")
+       console.log("ohohohoho")
 }
