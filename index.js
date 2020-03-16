@@ -1,94 +1,53 @@
-const height = require('height');
-let a = 5;
-let b = 5;
+var x = 47;
+var y;
 
-if(a > b){
-    console.log(a);
-}else if (a < b){
-    console.log(b);
-}else{
-    console.log('a = b')
+if (x >= 85) {
+  console.log("A+");
+  y = 1;
+} else if ( x >= 80){
+  console.log("A");
+  y = 1;
+} else if( x >= 75){
+  console.log("A-");
+  y = 1;
+} else if (x >= 70){
+  console.log("B+");
+  y = 2;
+} else if (x >= 65){
+  console.log("B");
+  y = 2;
+} else if(x >= 60){
+  console.log("B-");
+  y = 2;
+} else if (x >= 55){;
+  console.log("C+");
+  y = 3;
+} else if (x >= 50){
+  console.log("C");
+  y = 3;
+} else if (x >= 40){
+  console.log("D");
+  y = 4;
+} else if(x >= 0){
+  console.log("E");
+  y = 4;
+} else{
+   console.log("please write a number from 0 to 100");
 }
 
-let x = 'six';
-let y = 6;
-
-if(x = y){
-    console.log(x , y)
-}
-
-const c = { isHavingFun : true }
-const d = { isHavingFun : true }
-console.log(c == d);
-console.log(c === d);
-
-const e = { isHavingFun : true}
-const f = e;
-console.log(e === f)
-
-const str = 0
-if (str){
-    console.log('not empty')
-}else {
-    console.log('empty')
-}
-
-const person = 'Jane';
-switch (person) {
-  case 'Jane':
-    console.log('Hi Jane');
-    break;
-  case 'John':
-    console.log('Hi John');
-    break;
-  case 'Joe':
-    console.log('Hi Joe');
-    break;
-  case 'Mary':
-    console.log('Hi Mary');
-    break;
-  default:
-    console.log('Hi');
-    break;
-}
-
-const foo = -1;
-switch (foo) {
+switch (y) {
   case 1:
-  case 2:
-  case 3:
-  case 4:
-    console.log('I like this number');
+    console.log("Pass with Distinction");
     break;
-  case -1:
-  case -2:
-    console.log('I love this number');
+  case 2:
+    console.log("Pass with Merit");
+    break;
+  case 3:
+    console.log("Pass");
+    break;
+  case 4:
+    console.log("Fail grades");
     break;
   default:
-    console.log('I don\'t like this number.');
+    console.log("your description")
 }
-
-const goo = 0;
-let output = '';
-switch (goo) {
-  case 0:
-    output += 'where ';
-  case 1:
-    output += 'are ';
-    output += ' you ';
-  case 2:
-    output += 'from ';
-  case 3:
-    output += '!!';
-  case 4:
-    output += '?';
-    console.log(output);
-    break;
-  case 5:
-    output += '!';
-    console.log(output);
-    break;
-  default:
-    console.log('Please pick a number from 0 to 5!');
-}
-
