@@ -1,21 +1,20 @@
-var x;
+var x = 0;
 var y;
 
 if(x > 100){
   console.log("please write a number from 0 to 100");
-}
-else if(x >= 75){
+} else if(x >= 75){
  y = 1;
 } else if(x >= 60){
   y = 2;
 } else if(x >= 50){
   y = 3;
-} else{
+} else {
   y = 4;
 }
 
 switch (y) {
-  case(1):
+  case 1:
    console.log("Pass with Distinction");
    if( x >= 85){
      console.log("A+");
@@ -26,7 +25,7 @@ switch (y) {
    }
    break;
 
-  case(2):
+  case 2:
    console.log("Pass with merit");
    if(x >= 70){
      console.log("B+");
@@ -37,7 +36,7 @@ switch (y) {
    }
    break;
   
-   case(3):
+   case 3:
     console.log("Pass");
     if(x >= 55){
       console.log("C+");
@@ -46,11 +45,11 @@ switch (y) {
     }
     break;
 
-    case(4):
-     console.log("Fail grages");
+    case 4:
+     console.log("Fail grades");
      if(x >= 40){
        console.log("D");
-     } else{
+     } else {
        console.log("E");
      }
      break;
